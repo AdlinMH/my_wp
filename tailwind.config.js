@@ -1,5 +1,11 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    enabled: process.env.NODE_ENV !== 'development',
+    content: ['./src/**/*.{js,ts,jsx,tsx,html}'],
+    options: {
+      keyframes: true,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
