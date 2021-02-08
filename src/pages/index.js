@@ -1,18 +1,18 @@
 import Head from 'next/head'
 
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Adlin Mohamad H.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1>Welcome..</h1>
-      </main>
-    </div>
+      <div className="container">
+        <main className="main">
+          <h1 className="text-8xl font-bold">Halo..</h1>
+        </main>
+      </div>
+    </>
   )
 }
